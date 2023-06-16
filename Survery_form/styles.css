@@ -1,0 +1,131 @@
+/* Global styles */
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f5ed;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f5ed;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+    appearance: none;
+}
+
+input[type="checkbox"]:before,
+input[type="radio"]:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:checked:before,
+input[type="radio"]:checked:before {
+    background-color: #4CAF50;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+textarea#email {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Interests section styles */
+.interests {
+    margin-bottom: 20px;
+}
+
+.interests label {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interests input[type="checkbox"] {
+    display: none;
+}
+
+.interests label:hover {
+    background-color: #45a049;
+}
+
+.interests input[type="checkbox"]:checked + label {
+    background-color: #45a049;
+}
+
+.interests label::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+
+.interests input[type="checkbox"]:checked + label::before {
+    background-color: #fff;
+}
+
+/* Thank you message styles */
+.thank-you-message {
+    text-align: center;
+    font-weight: bold;
+}

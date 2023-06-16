@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Student Survey Form</h1>
+    
+    <form action="store_data.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required><br><br>
+        
+        <label>Interests:</label><br>
+<div class="interest-option">
+    <input type="checkbox" id="interest1" name="interests" value="sports">
+    <label for="interest1">Sports</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest2" name="interests" value="music">
+    <label for="interest2">Music</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest3" name="interests" value="art">
+    <label for="interest3">Art</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest4" name="interests" value="reading">
+    <label for="interest4">Reading</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest5" name="interests" value="travel">
+    <label for="interest5">Travel</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest6" name="interests" value="cooking">
+    <label for="interest6">Cooking</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest7" name="interests" value="photography">
+    <label for="interest7">Photography</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest8" name="interests" value="gaming">
+    <label for="interest8">Gaming</label>
+</div>
+<div class="interest-option">
+    <input type="checkbox" id="interest9" name="interests" value="dancing">
+    <label for="interest9">Dancing</label>
+</div>
+<br>
+
+        
+        <label for="about">Tell me about yourself:</label><br>
+        <textarea id="about" name="about" rows="4" cols="30" required></textarea><br><br>
+        
+        <label for="likeMovies">Do you like movies?</label><br>
+        <input type="radio" id="yesMovies" name="likeMovies" value="yes" required>
+        <label for="yesMovies">Yes</label>
+        <input type="radio" id="noMovies" name="likeMovies" value="no">
+        <label for="noMovies">No</label><br><br>
+        
+        <label for="genre">Favorite genre:</label><br>
+        <select id="genre" name="genre" required>
+            <option value="">Select</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Sci-Fi</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
